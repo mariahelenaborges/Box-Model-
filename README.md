@@ -1,2 +1,8 @@
-# Box-Model-
-Apresentação sobre Box Model em CSS  Exemplos: exemplo1.html → cartão de perfilexemplo2.html → botão estilizado - exemplo3.html → caixa de comentário - exemplo4.html → produto de loja - exemplo5.html → exemplo com box-sizing
+Apresentação sobre Box Model em CSS
+
+Exemplos:
+- exemplo1.html → cartão de perfil
+- exemplo2.html → botão estilizado
+- exemplo3.html → caixa de comentário
+- exemplo4.html → produto de loja
+- exemplo5.html → exemplo com box-sizing
