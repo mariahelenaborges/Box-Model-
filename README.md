@@ -1,7 +1,7 @@
 Apresentação sobre Box Model em CSS
 
 Exemplos:
-- exemplo1.html → cartão de perfil
+- boxmodel.html → cartão de perfil
 - exemplo2.html → botão estilizado
 - exemplo3.html → caixa de comentário
 - exemplo4.html → produto de loja
