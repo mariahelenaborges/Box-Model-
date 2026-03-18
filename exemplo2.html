@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>botão estilizado</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     background:linear-gradient(135deg, #0731f0, #8103ff);
+    font-family:Arial;
+}
+
+.botao{
+    font-size:30px;
+    padding:25px 50px;
+    border:4px solid rgb(217, 255, 0);
+    border-radius:10px;
+    background:rgb(253, 0, 177);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.botao:hover{
+    background:rgb(0, 255, 255);
+    color:white;
+}
+
+.confete{
+    position:fixed;
+    width:10px;
+    height:10px;
+    top:50%;
+    left:50%;
+    opacity:0.9;
+    animation:explodir 1s ease-out forwards;
+}
+
+@keyframes explodir{
+    from{
+        transform:translate(0,0);
+        opacity:1;
+    }
+    to{
+        transform:translate(var(--x), var(--y));
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<button class="botao" onclick="confetes()">Clique aqui</button>
+
+<script>
+
+function confetes(){
+
+    for(let i=0;i<80;i++){
+
+        const confete=document.createElement("div");
+        confete.classList.add("confete");
+
+        confete.style.background=
+        `hsl(${Math.random()*360},100%,50%)`;
+
+        confete.style.setProperty(
+        "--x",(Math.random()*600-300)+"px"
+        );
+
+        confete.style.setProperty(
+        "--y",(Math.random()*600-300)+"px"
+        );
+
+        document.body.appendChild(confete);
+
+        setTimeout(()=>{
+            confete.remove();
+        },1000);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

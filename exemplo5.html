@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Box Sizing</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg, #ff8989, #fc77df);
+    font-family:Arial;
+}
+
+.container{
+    display:flex;
+    gap:40px;
+}
+
+.sem-box{
+    width:250px;
+    padding:40px;
+    border:5px solid red;
+    background:white;
+    border-radius:12px;
+    text-align:center;
+}
+
+.com-box{
+    width:250px;
+    padding:40px;
+    border:5px solid green;
+    background:white;
+    border-radius:12px;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+.titulo{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sem-box">
+<div class="titulo">Sem box-sizing</div>
+<p>Essa caixa fica maior do que deveria</p>
+</div>
+
+<div class="com-box">
+<div class="titulo">Com box-sizing</div>
+<p>Essa caixa mantém o tamanho correto</p>
+</div>
+
+</div>
+
+</body>
+</html>

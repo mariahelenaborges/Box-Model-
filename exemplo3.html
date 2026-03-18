@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Caixa de comentários</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     background:linear-gradient(135deg, #ffa1a1, #ff6767);
+    font-family:Arial;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 300px 300px;
+    gap:25px;
+}
+
+.comentario{
+    width:300px;
+    height:120px;
+    padding:15px;
+    background:white;
+    border:1px solid #ccc;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+    box-sizing:border-box;
+}
+
+.usuario{
+    font-weight:bold;
+}
+
+.tempo{
+    color:gray;
+    font-size:12px;
+}
+
+.texto{
+    margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="comentario">
+<div class="usuario">Tidinha Meneghel</div>
+<div class="tempo">2 dias atrás</div>
+<div class="texto">Gostei muito do site, mas podia ter mais a Xuxa!</div>
+</div>
+
+<div class="comentario">
+<div class="usuario">Rodrigo Apresentador</div>
+<div class="tempo">1 semana atrás</div>
+<div class="texto">Achei a cópia do meu blog da Hebe Camargo.</div>
+</div>
+
+<div class="comentario">
+<div class="usuario">Jenny Prioli</div>
+<div class="tempo">3 dias atrás</div>
+<div class="texto">Me informou sobre a peste negra, interessante!</div>
+</div>
+
+<div class="comentario">
+<div class="usuario">Amanda PrivetPrivet</div>
+<div class="tempo">5 dias atrás</div>
+<div class="texto">Algumas páginas demoraram para carregar.</div>
+</div>
+
+<div class="comentario">
+<div class="usuario">Agatha Nunes</div>
+<div class="tempo">4 horas atrás</div>
+<div class="texto">Achei o site super tumbler e fofo.</div>
+</div>
+
+<div class="comentario">
+<div class="usuario">Gretchen </div>
+<div class="tempo">1 mês atrás</div>
+<div class="texto">Poderia ter mais informações na página inicial. Site 
+    extremamente masculino.</div>
+</div>
+
+</div>
+
+</body>
+</html>

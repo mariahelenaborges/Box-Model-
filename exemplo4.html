@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Produto</title>
+
+<style>
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg, #fc81b4, #ff00aa);
+    font-family:Arial;
+}
+
+.produto{
+    width:80%;
+    max-width:1200px;
+    height:350px;
+
+    padding:30px;
+    background:white;
+    border:2px solid #ddd;
+    border-radius:12px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    box-sizing:border-box;
+
+    display:flex;
+    gap:30px;
+}
+
+.produto img{
+    width:35%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.info{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.titulo{
+    font-size:32px;
+    font-weight:bold;
+}
+
+.descricao{
+    margin-top:15px;
+    font-size:18px;
+    color:#555;
+}
+
+.preco{
+    margin-top:20px;
+    font-size:34px;
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+.botao{
+    margin-top:20px;
+    padding:15px;
+    width:220px;
+
+    border:none;
+    background:#f303e7;
+    color:white;
+    font-size:18px;
+
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.botao:hover{
+    background:#64036d;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="produto">
+
+<img src="dress.jpg" alt="Dress">
+
+<div class="info">
+
+<div class="titulo">Vestido de Barbie Moda e Magia</div>
+
+<div class="descricao">
+Icônico modelo transformável, conhecido por mudar de um visual casual para um look de festa glamoroso.
+Geralmente em tons de rosa e pink com toques de cetim e renda, a peça simboliza a transformação mágica.
+</div>
+
+<div class="preco">
+R$ 1990,00
+</div>
+
+<button class="botao">Comprar agora</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
